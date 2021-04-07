@@ -22,8 +22,7 @@ import java.util.List;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @Provider("character_provider")
-@PactFolder("/Users/sasa.radivoi/Workspace/Presentation01/code/consumer/target/pacts")
-@PactUrl(urls = {"file:///Users/sasa.radivoi/Workspace/VSC/angular-essentials-project/pacts/ui-character_provider.json"})
+@PactFolder("path/to/target/pacts")
 public class CharacterProviderTest {
 
     private final Logger log = LoggerFactory.getLogger(CharacterProviderTest.class);
